@@ -1,0 +1,127 @@
+{
+    "intents": [
+        {
+            "intent": "AMAZON.PauseIntent"
+        },
+        {
+            "intent": "AMAZON.ResumeIntent"
+        },
+      	{
+          	"intent": "AMAZON.NextIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        },
+        {
+            "intent": "AMAZON.PreviousIntent"
+        },
+      	{
+          	"intent": "AMAZON.ShuffleOnIntent"
+        },
+      	{
+          	"intent": "AMAZON.StartOverIntent"
+        },
+        {
+            "intent": "PlexPlayTrackIntent",
+          	"slots": [{
+              	"name": "track",
+              	"type": "AMAZON.MusicRecording"
+            }]
+        },
+        {
+            "intent": "PlexPlayTrackByArtistIntent",
+            "slots": [{
+                "name": "track",
+                "type": "AMAZON.MusicRecording"
+            },{
+                "name": "artist",
+                "type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexPlayAlbumIntent",
+          	"slots": [{
+              	"name": "album",
+              	"type": "AMAZON.MusicAlbum"
+            }]
+        },
+        {
+            "intent": "PlexPlayAlbumByArtistIntent",
+            "slots": [{
+                "name": "album",
+                "type": "AMAZON.MusicAlbum"
+            },{
+                "name": "artist",
+                "type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexPlayArtistIntent",
+          	"slots": [{
+              	"name": "artist",
+              	"type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexPlayPlaylistIntent",
+          	"slots": [{
+              	"name": "playlist_name",
+              	"type": "AMAZON.MusicPlaylist"
+            }]
+        },
+        {
+            "intent": "PlexQueueTrackIntent",
+            "slots": [{
+                "name": "track",
+                "type": "AMAZON.MusicRecording"
+            }]
+        },
+        {
+            "intent": "PlexQueueTrackByArtistIntent",
+            "slots": [{
+                "name": "track",
+                "type": "AMAZON.MusicRecording"
+            },{
+                "name": "artist",
+                "type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexQueueAlbumIntent",
+            "slots": [{
+                "name": "album",
+                "type": "AMAZON.MusicAlbum"
+            }]
+        },
+        {
+            "intent": "PlexQueueAlbumByArtistIntent",
+            "slots": [{
+                "name": "album",
+                "type": "AMAZON.MusicAlbum"
+            },{
+                "name": "artist",
+                "type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexQueueArtistIntent",
+            "slots": [{
+                "name": "artist",
+                "type": "AMAZON.MusicGroup"
+            }]
+        },
+        {
+            "intent": "PlexQueuePlaylistIntent",
+            "slots": [{
+                "name": "playlist_name",
+                "type": "AMAZON.MusicPlaylist"
+            }]
+        },
+        {
+            "intent": "PlexWhatSongIntent"
+        },
+      	{
+          	"intent": "PlexStatusIntent"
+        }
+    ]
+}
